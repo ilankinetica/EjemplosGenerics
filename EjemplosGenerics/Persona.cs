@@ -8,6 +8,14 @@ namespace EjemplosGenerics
 {
     public class Persona
     {
-        public string Nombre { get; set; }
+        public string Nombre { get; private set; }
+        public Persona()
+        {
+
+        }
+        public Persona(string nombre)
+        {
+            this.Nombre = nombre;
+        }
     }
 }
